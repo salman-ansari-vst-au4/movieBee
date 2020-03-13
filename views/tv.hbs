@@ -1,0 +1,15 @@
+<main>
+  <div class="m-5 text-center box row">
+    {{#each data}}
+    <div class="col-md-3 mb-5 rounded">
+      <a href="tv/{{this.id}}">
+        <img src="https://image.tmdb.org/t/p/w500/{{this.poster_path}}" class="card-img-top w-75 rounded shadow-lg"
+          alt="movie poster">
+      </a>
+    </div>
+    {{/each}}
+  </div>
+  <div class="text-center">
+    <a href="/tv/page/{{page}}"><button class="btn btn-warning mx-auto m-5">Load More</button></a>
+  </div>
+</main>

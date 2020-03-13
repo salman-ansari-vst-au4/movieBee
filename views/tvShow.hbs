@@ -1,0 +1,15 @@
+<main>
+  <section class="row m-5 p-5 text-center">
+    <div class=" col-md-3 ml-5">
+      <img src="https://image.tmdb.org/t/p/w500/{{data.poster_path}}" class=" card-img-top shadow-lg rounded"
+        alt="movie poster">
+    </div>
+    <article class="col-md-7 text-left ml-5 mr-5">
+      <h1 class="font-weight-bold">{{data.original_name}}</h1>
+      <h3>Overview</h3>
+      <p class="text-justify">{{data.overview}}</p>
+      <p><b>Number of Seasons</b> : {{data.number_of_seasons}}</p>
+      <p><b>Number of Episodes</b> : {{data.number_of_episodes}}</p>
+    </article>
+  </section>
+</main>
