@@ -1,4 +1,3 @@
-
 <main>
   <div class="m-5 text-center row">
     {{#each data}}
@@ -12,7 +11,9 @@
     {{/if}}
     {{/each}}
   </div>
+  {{#if page}}
   <div class="text-center">
-  <a href="/movie/page/{{page}}"><button class="btn btn-warning mx-auto m-5">Load More</button></a>
+    <a href="/movie/page/{{page}}"><button class="btn btn-warning mx-auto m-5">Load More</button></a>
   </div>
+  {{/if}}
 </main>
